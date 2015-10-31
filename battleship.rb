@@ -52,8 +52,8 @@ class Game
   def play_turn
     shot = @current[:player].get_shot
     is_hit = @other[:board].shoot_at(shot)
-    @other[:board].update_tile(shot, is_hit)
-    @current[:player].send_feedback(is_hit)
+    new_tile = @other[:board].update_tile(shot, is_hit)
+    @current[:player].send_feedback(is_hit, new_tile)
   end
 
   def switch_players!
