@@ -26,3 +26,23 @@ class HumanPlayer
     end
   end
 end
+
+class SimpleComputer < HumanPlayer
+  def initialize(name)
+    @name = name
+    @previous_shots = []
+  end
+
+  def get_shot(board)
+    random_shot
+  end
+
+  def random_shot
+    shot = [rand(10), rand(10)]
+    while @previous_shots.include?(shot)
+      shot = [rand(10), rand(10)]
+    end
+    @previous_shots << shot
+    shot
+  end
+end
