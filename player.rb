@@ -18,9 +18,9 @@ class HumanPlayer
     input.map {|coord| coord.to_i}
   end
 
-  def send_feedback(is_hit, new_tile)
+  def send_feedback(is_hit, shot)
     if is_hit
-      puts "Hit at #{new_tile.position}!"
+      puts "Hit at #{shot}!"
     else
       puts "Miss!"
     end
@@ -28,7 +28,7 @@ class HumanPlayer
 end
 
 class SimpleComputer < HumanPlayer
-  def initialize(name)
+  def initialize(name = "Computer")
     @name = name
     @previous_shots = []
   end

@@ -1,6 +1,9 @@
-
+require_relative "board"
+require_relative "player"
+require "colorize"
+require "yaml"
 class Game
-
+  attr_reader :board1, :board2, :player1, :player2, :current, :other
   def initialize(board1, board2, player1, player2)
     @player1 = {board: board1, player: player1}
     @player2 = {board: board2, player: player2}
@@ -22,6 +25,7 @@ class Game
 
   def start_game
     puts "Welcome to Battleship!"
+    input = ""
     until input == 'N' || input == 'L'
       puts "Type 'N' to start a new game or 'L' to load a previous game "
       input = gets.chomp.upcase
@@ -36,24 +40,36 @@ class Game
   end
 
   def load_game
-    saved_game = YAML.load("save.yml")
+    saved_game = YAML.load_file("save.yml")
     @player1 = saved_game.player1
     @player2 = saved_game.player2
     @current = saved_game.current
-    @other = saved_game.current
+    @other = saved_game.other
+  end
+
+  def save_game
+    File.open("save.yml", "w") do |f|
+      f.puts self.to_yaml
+    end
   end
 
   def render_boards
     system("clear")
     @other[:board].render
+    puts "-----------------------"
     @current[:board].render_own
   end
 
   def play_turn
-    shot = @current[:player].get_shot
+    shot = @current[:player].get_shot(@other[:board])
+    if shot == "s"
+      save_game
+      puts "Game saved! Input coordinates to continue"
+      shot = @current[:player].get_shot(@other[:board])
+    end
     is_hit = @other[:board].shoot_at(shot)
-    new_tile = @other[:board].update_tile(shot, is_hit)
-    @current[:player].send_feedback(is_hit, new_tile)
+    # new_tile = @other[:board].update_tile(shot, is_hit)
+    @current[:player].send_feedback(is_hit, shot)
   end
 
   def switch_players!
@@ -70,3 +86,10 @@ class Game
     @current[:player].name
   end
 end
+
+player1 = HumanPlayer.new("Andrew")
+player2 = SimpleComputer.new
+board1 = Board.new
+board2 = Board.new
+game = Game.new(board1, board2, player1, player2)
+game.play

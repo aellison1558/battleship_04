@@ -1,0 +1,1424 @@
+--- !ruby/object:Game
+player1: &3
+  :board: &1 !ruby/object:Board
+    grid:
+    - - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 0
+        - 0
+        hit: true
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 0
+        - 1
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 0
+        - 2
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 0
+        - 3
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 0
+        - 4
+        hit: true
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 0
+        - 5
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 0
+        - 6
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 0
+        - 7
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 0
+        - 8
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 0
+        - 9
+        hit: false
+    - - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 1
+        - 0
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 1
+        - 1
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 1
+        - 2
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *1
+        pos:
+        - 1
+        - 3
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 1
+        - 4
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 1
+        - 5
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *1
+        pos:
+        - 1
+        - 6
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *1
+        pos:
+        - 1
+        - 7
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *1
+        pos:
+        - 1
+        - 8
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *1
+        pos:
+        - 1
+        - 9
+        hit: false
+    - - !ruby/object:Tile
+        value: :s
+        board: *1
+        pos:
+        - 2
+        - 0
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *1
+        pos:
+        - 2
+        - 1
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 2
+        - 2
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *1
+        pos:
+        - 2
+        - 3
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 2
+        - 4
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 2
+        - 5
+        hit: true
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 2
+        - 6
+        hit: true
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 2
+        - 7
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 2
+        - 8
+        hit: true
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 2
+        - 9
+        hit: false
+    - - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 3
+        - 0
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 3
+        - 1
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 3
+        - 2
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *1
+        pos:
+        - 3
+        - 3
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 3
+        - 4
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 3
+        - 5
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 3
+        - 6
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 3
+        - 7
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 3
+        - 8
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 3
+        - 9
+        hit: false
+    - - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 4
+        - 0
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 4
+        - 1
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 4
+        - 2
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *1
+        pos:
+        - 4
+        - 3
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 4
+        - 4
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 4
+        - 5
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 4
+        - 6
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 4
+        - 7
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 4
+        - 8
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 4
+        - 9
+        hit: false
+    - - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 5
+        - 0
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 5
+        - 1
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 5
+        - 2
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *1
+        pos:
+        - 5
+        - 3
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 5
+        - 4
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 5
+        - 5
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 5
+        - 6
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 5
+        - 7
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 5
+        - 8
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 5
+        - 9
+        hit: false
+    - - !ruby/object:Tile
+        value: :s
+        board: *1
+        pos:
+        - 6
+        - 0
+        hit: true
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 6
+        - 1
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 6
+        - 2
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 6
+        - 3
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 6
+        - 4
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 6
+        - 5
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 6
+        - 6
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 6
+        - 7
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 6
+        - 8
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 6
+        - 9
+        hit: false
+    - - !ruby/object:Tile
+        value: :s
+        board: *1
+        pos:
+        - 7
+        - 0
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 7
+        - 1
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 7
+        - 2
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 7
+        - 3
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *1
+        pos:
+        - 7
+        - 4
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *1
+        pos:
+        - 7
+        - 5
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *1
+        pos:
+        - 7
+        - 6
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 7
+        - 7
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 7
+        - 8
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 7
+        - 9
+        hit: false
+    - - !ruby/object:Tile
+        value: :s
+        board: *1
+        pos:
+        - 8
+        - 0
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 8
+        - 1
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 8
+        - 2
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 8
+        - 3
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 8
+        - 4
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 8
+        - 5
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 8
+        - 6
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 8
+        - 7
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 8
+        - 8
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 8
+        - 9
+        hit: false
+    - - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 9
+        - 0
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 9
+        - 1
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 9
+        - 2
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 9
+        - 3
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 9
+        - 4
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 9
+        - 5
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 9
+        - 6
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 9
+        - 7
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 9
+        - 8
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *1
+        pos:
+        - 9
+        - 9
+        hit: false
+  :player: !ruby/object:HumanPlayer
+    name: Andrew
+player2: &4
+  :board: &2 !ruby/object:Board
+    grid:
+    - - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 0
+        - 0
+        hit: true
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 0
+        - 1
+        hit: true
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 0
+        - 2
+        hit: true
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 0
+        - 3
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 0
+        - 4
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 0
+        - 5
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 0
+        - 6
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 0
+        - 7
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 0
+        - 8
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *2
+        pos:
+        - 0
+        - 9
+        hit: false
+    - - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 1
+        - 0
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 1
+        - 1
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 1
+        - 2
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 1
+        - 3
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 1
+        - 4
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 1
+        - 5
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 1
+        - 6
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 1
+        - 7
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 1
+        - 8
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *2
+        pos:
+        - 1
+        - 9
+        hit: false
+    - - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 2
+        - 0
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 2
+        - 1
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 2
+        - 2
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 2
+        - 3
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 2
+        - 4
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 2
+        - 5
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 2
+        - 6
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 2
+        - 7
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 2
+        - 8
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *2
+        pos:
+        - 2
+        - 9
+        hit: false
+    - - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 3
+        - 0
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 3
+        - 1
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 3
+        - 2
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 3
+        - 3
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 3
+        - 4
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *2
+        pos:
+        - 3
+        - 5
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *2
+        pos:
+        - 3
+        - 6
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *2
+        pos:
+        - 3
+        - 7
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 3
+        - 8
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 3
+        - 9
+        hit: false
+    - - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 4
+        - 0
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 4
+        - 1
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 4
+        - 2
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 4
+        - 3
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 4
+        - 4
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 4
+        - 5
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 4
+        - 6
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 4
+        - 7
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 4
+        - 8
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 4
+        - 9
+        hit: false
+    - - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 5
+        - 0
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 5
+        - 1
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 5
+        - 2
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 5
+        - 3
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *2
+        pos:
+        - 5
+        - 4
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *2
+        pos:
+        - 5
+        - 5
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *2
+        pos:
+        - 5
+        - 6
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *2
+        pos:
+        - 5
+        - 7
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *2
+        pos:
+        - 5
+        - 8
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 5
+        - 9
+        hit: false
+    - - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 6
+        - 0
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 6
+        - 1
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 6
+        - 2
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 6
+        - 3
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 6
+        - 4
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 6
+        - 5
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *2
+        pos:
+        - 6
+        - 6
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *2
+        pos:
+        - 6
+        - 7
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *2
+        pos:
+        - 6
+        - 8
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *2
+        pos:
+        - 6
+        - 9
+        hit: false
+    - - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 7
+        - 0
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 7
+        - 1
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 7
+        - 2
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 7
+        - 3
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 7
+        - 4
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 7
+        - 5
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 7
+        - 6
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *2
+        pos:
+        - 7
+        - 7
+        hit: false
+      - !ruby/object:Tile
+        value: :s
+        board: *2
+        pos:
+        - 7
+        - 8
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 7
+        - 9
+        hit: false
+    - - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 8
+        - 0
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 8
+        - 1
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 8
+        - 2
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 8
+        - 3
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 8
+        - 4
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 8
+        - 5
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 8
+        - 6
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 8
+        - 7
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 8
+        - 8
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 8
+        - 9
+        hit: false
+    - - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 9
+        - 0
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 9
+        - 1
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 9
+        - 2
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 9
+        - 3
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 9
+        - 4
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 9
+        - 5
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 9
+        - 6
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 9
+        - 7
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 9
+        - 8
+        hit: false
+      - !ruby/object:Tile
+        value: 
+        board: *2
+        pos:
+        - 9
+        - 9
+        hit: false
+  :player: !ruby/object:SimpleComputer
+    name: Computer
+    previous_shots:
+    - - 2
+      - 6
+    - - 0
+      - 4
+    - - 2
+      - 8
+    - - 2
+      - 5
+    - - 6
+      - 0
+current: *3
+other: *4
