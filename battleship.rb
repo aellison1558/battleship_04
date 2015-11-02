@@ -1,5 +1,6 @@
 require_relative "board"
 require_relative "player"
+require_relative 'display'
 require "colorize"
 require "yaml"
 class Game
@@ -9,6 +10,7 @@ class Game
     @player2 = {board: board2, player: player2}
     @current = @player1
     @other = @player2
+    @display = Display.new(@current[:board])
   end
 
   def play
@@ -55,13 +57,23 @@ class Game
 
   def render_boards
     system("clear")
-    @other[:board].render
+    @display.update_board(@other[:board])
+    @display.render
     puts "-----------------------"
-    @current[:board].render_own
+    @display.update_board(@current[:board])
+    @display.render_own
   end
 
   def play_turn
-    shot = @current[:player].get_shot(@other[:board])
+    shot = nil
+    if @current[:player].is_a?(HumanPlayer)
+      until shot
+        shot = @display.get_input
+        render_boards
+      end
+    else
+      shot = @current[:player].get_shot(@other[:board])
+    end
     if shot == "s"
       save_game
       puts "Game saved! Input coordinates to continue"

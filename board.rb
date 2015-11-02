@@ -31,7 +31,7 @@ SHIPS = {
         pos = [row_idx, col_idx]
         p pos
         if col
-          self[pos] = Tile.new(:s, self, pos)
+          self[pos] = Tile.new([:s, col[:tag]], self, pos)
         else
           self[pos] = Tile.new(nil, self, pos)
         end
@@ -39,35 +39,25 @@ SHIPS = {
     end
   end
 
-  def render
-    puts "  #{(0..9).to_a.join(" ")}"
-    @grid.each_with_index do |row, row_num|
-      print "#{row_num} "
-      row.each do |tile|
-        tile.show(false)
-        print " "
-      end
-      puts ""
-    end
-  end
-
-  def render_own
-    puts "  #{(0..9).to_a.join(" ")}"
-    @grid.each_with_index do |row, row_num|
-      print "#{row_num} "
-      row.each do |tile|
-        tile.show(true)
-        print " "
-      end
-      puts ""
-    end
-  end
-
   def all_ships_sunk?
     @grid.flatten.each do |tile|
-      return false if tile.value == :s && !tile.hit
+      return false if tile.value.is_a?(Array) && !tile.hit
     end
     true
+  end
+
+  def ships_sunk
+    sunk = []
+    SHIPS.each do |ship_name, ship|
+      ship_tiles = []
+      @grid.flatten.select do |tile|
+        if tile.value
+          ship_tiles << tile if tile.value[1] == ship[:tag]
+        end
+      end
+      sunk << ship_name if ship_tiles.all? {|tile| tile.hit}
+    end
+    sunk
   end
 
   def shoot_at(shot)
@@ -137,6 +127,14 @@ SHIPS = {
         return false if self[[position[0], col]]
       end
       true
+    end
+  end
+
+  def in_bounds?(pos)
+    if pos[0].between?(0, 9) && pos[1].between?(0,9)
+      true
+    else
+      false
     end
   end
 

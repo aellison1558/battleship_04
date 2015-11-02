@@ -23,15 +23,15 @@ class Tile
   def show(own)
     if @hit
       if @value
-        print "X".colorize(:red)
+         "X".colorize(:red)
       else
-        print "M".colorize(:white)
+         "M".colorize(:white)
       end
     else
       if own && @value
-        print value.to_s.colorize(:green)
+         value[0].to_s.colorize(:green)
       else
-        print "W".colorize(:blue)
+         "W".colorize(:blue)
       end
     end
   end

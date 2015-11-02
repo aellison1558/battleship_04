@@ -18,6 +18,9 @@ class HumanPlayer
     input.map {|coord| coord.to_i}
   end
 
+  def cursor_input
+  end
+
   def send_feedback(is_hit, shot)
     if is_hit
       puts "Hit at #{shot}!"
@@ -27,7 +30,8 @@ class HumanPlayer
   end
 end
 
-class SimpleComputer < HumanPlayer
+class SimpleComputer
+  attr_reader :name
   def initialize(name = "Computer")
     @name = name
     @previous_shots = []
@@ -44,5 +48,13 @@ class SimpleComputer < HumanPlayer
     end
     @previous_shots << shot
     shot
+  end
+
+  def send_feedback(is_hit, shot)
+    if is_hit
+      puts "Hit at #{shot}!"
+    else
+      puts "Miss!"
+    end
   end
 end
